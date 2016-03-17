@@ -1,0 +1,23 @@
+.titre{
+	border-bottom-style: double;
+	border-width: medium; 
+	width : 900px;
+	margin-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	padding:auto;
+}
+.body{
+	width : 900px;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.icons{
+	display: inline-block;
+	text-align:center;
+	width : 900px;
+	margin-top: 80px;
+	margin-left: auto;
+	margin-right: auto;
+}

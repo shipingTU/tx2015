@@ -1,0 +1,33 @@
+@CHARSET "UTF-8";
+
+#galerieSlider {
+	position: relative;
+  overflow: hidden;
+  display: block;
+	margin-left: auto;
+    margin-right: auto
+}
+
+#galerieSlider ul {
+	position: relative;
+  margin: 0;
+  padding: 0;
+  height: 600px;
+  list-style: none;
+}
+
+#galerieSlider ul li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 800px;
+  height: 600px;
+}
+#galerieSlider ul li img{
+
+  display: block;
+	margin-left: auto;
+    margin-right: auto
+}

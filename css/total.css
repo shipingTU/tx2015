@@ -1,0 +1,93 @@
+body {
+    background: url("../source/fond.jpg") no-repeat fixed center; 
+} 
+#header, #diminuer, #agrandir{
+	text-align : right;
+	color:#f5f5dc;
+	font-size:16px;
+	padding:10px;
+	background:#59191f;
+}
+#embleme{
+	position: relative;
+    left : 50px;
+}
+#menu{
+	margin-top : 5px;
+	position : relative;
+	border-bottom-style: double;
+}
+#total{
+	background-color : white;
+	margin-left: auto;
+	margin-right: auto;
+	width : 1000px;
+}
+#main{
+	margin: 0px auto; 
+	display : block;
+	min-height: 600px;
+	overflow:hidden;
+}
+#content{
+	width : 650px;
+	padding: 10px;
+	float: left;
+	display : block;
+	border-right: dashed 1px;	
+	padding-bottom:100000px;
+	margin-bottom:-100000px; 
+}
+#panneaux{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	width : 350px;
+	float: right;
+	display : block;
+	background:OLDLACE;
+	hight :  100%;
+		padding-bottom:100000px;
+	margin-bottom:-100000px; 
+}
+fieldset.panneaux {
+    border: 1px groove #ddd !important;
+    padding: 0 1.4em 1.4em 1.4em !important;
+
+    -webkit-box-shadow:  0px 0px 0px 0px #000;
+            box-shadow:  0px 0px 0px 0px #000;
+}
+
+legend.panneaux {
+    width:inherit;
+    padding:0 10px; 
+    border-bottom:none;
+}
+#meteo{
+  display: block;
+  width: 320px;
+  height: 170px;
+  padding:10px;
+  margin: 0 auto;
+}
+
+#back{
+  padding:25px;
+  font-size: 150%;
+}
+#foot{
+	color:#f5f5dc;
+	font-size:16px; 
+	display : block;
+	margin-top: 20px;
+	clear: both;
+	padding:5px;
+	background:#59191f;
+}
+.wrap{padding: 20px;
+margin:0 auto}
+.short { 
+	text-align: center;
+	max-width: 500px; 
+	display:block;
+	margin:0 auto
+}

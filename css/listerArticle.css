@@ -1,0 +1,32 @@
+.listeTitre{
+	text-align:center;
+	border-bottom-style: double;
+	border-width: medium; 
+	width : 900px;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	padding:auto;
+}
+.articleList{
+	width : 900px;
+	display: -webkit-flex;
+	display: flex;
+	margin: 0 auto;
+	padding:auto;
+}
+.left{
+	text-align:center;
+	height : 180px;
+	width: 150px;
+	padding-top: 25px;
+	margin: 0 auto;
+}
+
+.right{
+	height : 180px;
+	width: 700px;
+	padding-top: 10px;
+	padding-left: 20px;
+	margin: 0 auto;
+}

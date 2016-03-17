@@ -1,0 +1,23 @@
+#enteteSlider {
+  position: relative;
+  left : 80px;
+  overflow: hidden;
+}
+
+#enteteSlider ul {
+  position: relative;
+  margin: 15px;
+  padding: 0;
+  height: 200px;
+  list-style: none;
+}
+
+#enteteSlider ul li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 600px;
+  height: 200px;
+}
