@@ -15,14 +15,14 @@ if(isset($_SESSION['ident']) and  $_SESSION['type'] != 'administrateur'){
 		<div class=\"well bs-component\">
     		<form class=\"form-horizontal short\" action=\"inscription.inc.php\" method=\"post\">
 				<div class=\"form-group\">
-				    <legend>Inscrire un user interne ou un administrateur</legend>	
+				    <legend>Inscrire un utilisateur (interne) ou un administrateur</legend>	
 				</div>	
 					<div class=\"row\">
     						<div class=\"form-group\">		   	
 							<label for=\"type\" class=\"col-lg-3\">Type compte:</label>
 							<div class=\"col-lg-9\">
 								<select name=\"type\">
-									<option value =userInterne>User interne</option>
+									<option value =utilisateur>Utilisateur</option>
 									<option value =administrateur>Administrateur</option>
 								</select></td>
 							</div>	
@@ -84,7 +84,8 @@ if(isset($_SESSION['ident']) and  $_SESSION['type'] != 'administrateur'){
 
     
 
-}else{
+}
+/*else{
 	echo("
 	<div id=\"main\">
 		<div class=\"well bs-component\">
@@ -146,10 +147,7 @@ if(isset($_SESSION['ident']) and  $_SESSION['type'] != 'administrateur'){
 		</form>				
 			</div>
 			</div>");
+}*/
 
-    
-
-
-}
 	require_once("footer.php");
 ?>

@@ -19,12 +19,12 @@ if(estConnecte() && isset($_REQUEST['motDePasseActuel'])){
 			$sql="UPDATE identifiants SET mdp='$hash' WHERE ident='$_SESSION[ident]'";
 			$vQuery=mysqli_query($bdd, $sql);
 			if ($vQuery){
-				echo "<h1 class=\"short\">Mot de passe modifié avec succès !</h1>";
+				echo "<div><h1 class=\"short\">Mot de passe modifié avec succès !</h1></div>";
 			}else{
-				echo "<p>Erreur dans la BDD !</p>";
+				echo "<div><p>Erreur dans la BDD !</p></div>";
 			}
 		}else{
-			echo "<h1 class=\"short\">Mot de passe actuel n'est pas correcte, veuillez réessayer</h1>";
+			echo "<div><h1 class=\"short\">Mot de passe actuel n'est pas correcte, veuillez réessayer</h1></div>";
 		}
 	}
 	mysqli_close($bdd);

@@ -3,9 +3,9 @@
 function connectionBD()
 {
 	$vHost = "localhost";
-	$vDbname = "mairie";
+	$vDbname = "tx2015";
 	$vUser = "mairie";
-	$vPassword = "mairie";
+	$vPassword = "tx2015";
 	$vConn = mysqli_connect($vHost, $vUser, $vPassword, $vDbname);
 	if (!$vConn){
 		die('Impossible de se connecter : ' . mysqli_connect_error());

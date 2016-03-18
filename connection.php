@@ -39,9 +39,6 @@ else
 						</div>
 					</form>
 				</div>
-				<div class=\"row short\">
-					Si vous n’êtes pas inscrit,  <a href=\"inscription.php\">« cliquez ici »</a> .
-				</div>
 			</div>
 		");
 }
