@@ -14,7 +14,6 @@
   
 	<div id="main">
 		<div id="content" align="left">
-
 		<?php
 			if ( $titre ){
 				$bdd=connectionBD();
@@ -29,8 +28,8 @@
 				mysqli_close($bdd);
 			}
 		?>
-
 		</div>			
+
 
 		<div id="panneaux" align="right">
 

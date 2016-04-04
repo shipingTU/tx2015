@@ -1,6 +1,8 @@
 <?php
 require_once('header.php');
 require_once('menu.php');
+
+echo ("<div id='main'>");
 if(isset($_REQUEST['ident']) )
 {
 	//Connection à la base de donnée
@@ -55,7 +57,6 @@ if(isset($_REQUEST['ident']) )
 	}
 	else
 	{
-
 		try
 		{
 			session_start();
@@ -90,6 +91,8 @@ else
 	echo('Veuillez remplir le formulaire');
 	require_once('inscription.php');	
 }	
+
+echo ("</div>");
 mysqli_close($bdd);
 require_once('footer.php');
 ?>

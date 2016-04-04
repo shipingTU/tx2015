@@ -10,6 +10,8 @@ if(estConnecte() && isset($_REQUEST['motDePasseActuel'])){
 	$bdd=connectionBD();
 	$sql="SELECT * FROM identifiants WHERE ident='$_SESSION[ident]'";
 	$vQuery=mysqli_query($bdd, $sql);
+
+	echo ("<div id='main'>");
 	if ( !$vQuery ){
 		echo "<p>Erreur de la cohérence entre la BDD et la session !</p>";
 	}else{
@@ -28,6 +30,7 @@ if(estConnecte() && isset($_REQUEST['motDePasseActuel'])){
 		}
 	}
 	mysqli_close($bdd);
+	echo ("</div>");
 	
 }else if(estConnecte()) { 
 ?>
@@ -69,12 +72,14 @@ if(estConnecte() && isset($_REQUEST['motDePasseActuel'])){
 					<div class="form-group">
 						<button id='butChnagerMpd' class="btn btn-primary" type="button" >Valider</button>
 					</div>
-		</form>				
-			</div>
-			</div>
+			</form>				
+		</div>
+	</div>
 <?php
 }else{
+	echo ("<div id='main'>");
 	alertContenuNonAutorise();
+	echo ("</div>");
 }
 	require_once("footer.php");
 ?>

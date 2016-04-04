@@ -3,6 +3,8 @@
 	$titre="Supprimer une article";
 	require_once('header.php');
 	require_once('menu.php');
+
+	echo("<div id='main'>");
 	if(estAdmin()){
 		$titre = $_GET['t'];
 		$bdd=connectionBD();
@@ -47,9 +49,11 @@
 ?>
 
 <a id="back" href="gererTout.php">Retourner</a>
+
 <?php 
 	}else{
 		alertContenuNonAutorise();
 	}
+	echo("</div>");
 require_once('footer.php');
-require_once('footer.php'); ?>
+?>

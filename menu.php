@@ -63,8 +63,7 @@
 						"Service Public"  
 							=> array("text"=>"Service Public",  
 									"url"=>"http://www.service-public.fr/"),
-					),
-						
+					),	
 						
 					//***************************//
 					"Le conseil municipal"=> array(
@@ -77,8 +76,6 @@
 						"Arrêtés municipaux"  => array("text"=>"Arrêtés municipaux",  "url"=>"depot.php?domaine=Arrêtés_municipaux"),
 						"Délibérations"  => array("text"=>"Délibérations",  "url"=>"depot.php?domaine=Délibérations"),
 					),
-						
-						
 						
 						
 					//***************************//
@@ -106,8 +103,7 @@
 							""  => array("text"=>"",  "url"=>""),
 							""  => array("text"=>"",  "url"=>""),
 							""  => array("text"=>"",  "url"=>""),*/
-					),
-						
+					),	
 						
 				);
 				$navigation = array();
@@ -145,10 +141,12 @@
 		</ul>  
 	</div>		
 </div>
+
 <script type="text/javascript">
 	initSlider('#enteteSlider');
 	setInterval(function () {moveRight('#enteteSlider');}, 2000);
 </script>	
+
 <div id="menu">
 	<ul id="menu-list">
 		<li><a href="."><strong>Le village</strong></a>
@@ -162,7 +160,6 @@
 			<ul>
 			<?php 
 				afficheMenuItem("Infos pratiques",$menu);
-			
 			?>	
 			</ul>
 		</li>
@@ -170,7 +167,6 @@
 			<ul>
 			<?php 
 				afficheMenuItem("Le conseil municipal",$menu);
-			
 			?>	
 			</ul>
 		</li>
@@ -178,7 +174,6 @@
 			<ul>
 			<?php 
 				afficheMenuItem("Les associations",$menu);
-			
 			?>	
 			</ul>
 		</li>
@@ -217,14 +212,13 @@
 	
 		
 </div>		
-<p id="navication"><?php 
-	//if (count($_SESSION['navigation'])==0){
-
-	//}
+<p id="navication">
+<?php 
 	echo "Vous êtes à : <a href='.'>Accueil</a>";
 	for($i=0; $i < count($navigation) ; ++$i){
 		if (isset($navigation[$i]))
 			echo " < <a id=\"". str_replace(" ", "_",$navigation[$i]) . "\"  > " . str_replace("_", " ",$navigation[$i]) . "</a>";
 	}
-	?></p>
+?>
+</p>
 

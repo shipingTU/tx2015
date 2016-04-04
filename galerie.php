@@ -6,9 +6,6 @@
 	require_once('header.php');
 	require_once('menu.php');
 	
-	/*
-
-	 */
 	if(isset($nom) && isset($mode)){
 ?>
 	 	<div id="main">
@@ -93,5 +90,6 @@
 	<script type="text/javascript">
     		$(<?php echo"\"#".str_replace(" ", "_",$titre) ."\""?>).attr("href", "galerie.php");
 	</script>
+	
 <?php require_once('footer.php'); ?>
 			

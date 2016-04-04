@@ -4,6 +4,8 @@
 	$titre="Supprimer un journal";
 	require_once('header.php');
 	require_once('menu.php');
+
+	echo("<div id='main'>");
 	if(estAdmin()){
 		$bdd=connectionBD();
 		$sujet = mysqli_real_escape_string($bdd, $_GET['sujet']);
@@ -17,8 +19,11 @@
 ?>	
 
 <a id="back" href="gererTout.php">Retourner</a>
+
 <?php
 	}else{
 		alertContenuNonAutorise();
 	}
-	require_once('footer.php'); ?>
+	echo("</div>");
+	require_once('footer.php'); 
+?>

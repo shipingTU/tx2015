@@ -3,6 +3,8 @@
 	$titre='Accueil';
 	require_once('header.php'); 
 	require_once('menu.php');
+
+	echo ("<div id='main'>");
 	//Connection à la base de donnée
 	$bdd=connectionBD();
 	//si déja connecter 
@@ -82,7 +84,9 @@
 		session_destroy();
 		echo('<strong>Veuillez vous indentifier</strong>');
 		require_once('connection.php');		
-	}	
+	}
+
+	echo ("</div>");	
 	require_once("footer.php");
 	mysqli_close($bdd);
 ?>

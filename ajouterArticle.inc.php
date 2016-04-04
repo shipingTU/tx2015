@@ -2,6 +2,7 @@
 	session_start();
 	require_once('header.php');
 	require_once('menu.php');
+	echo ("<div id='main'>");
 	if(estAdmin()){
 		header('Content-type: text/html; charset=utf-8');
 		
@@ -176,4 +177,6 @@
 	}else{
 		alertContenuNonAutorise();
 	}
-	require_once('footer.php'); ?>
+	echo ("</div>");
+	require_once('footer.php'); 
+?>

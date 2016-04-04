@@ -2,6 +2,8 @@
 	session_start();
 	require_once('header.php');
 	require_once('menu.php');
+
+	echo ("<div id='main'>");
 	if(estAdmin()){
 		header('Content-type: text/html; charset=utf-8');
 		
@@ -59,5 +61,7 @@
 	}else{
 		alertContenuNonAutorise();
 	}
+	echo ("</div>");
 	mysqli_close($bdd);
-	require_once('footer.php'); ?>
+	require_once('footer.php'); 
+?>

@@ -3,9 +3,7 @@
 	$titre=$_REQUEST[section];
 	require_once('header.php');
 	require_once('menu.php');
-?>
 
-<?php
 	$bdd=connectionBD();
 	$item=mysqli_real_escape_string($bdd, $_REQUEST[section]);
 	$sql="SELECT create_time, titre, file, file_tag, contenu, description FROM articles where menu_item='$item' and end_date>CURRENT_DATE";
@@ -38,10 +36,10 @@
 					</div>
 				</div>';
 		}
-		mysqli_close($bdd);
 		echo '</div>';
 	}
-?>
 	
-<?php require_once('footer.php'); ?>
+	mysqli_close($bdd);
+	require_once('footer.php'); 
+?>
 			

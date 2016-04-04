@@ -9,6 +9,7 @@
 	$sql="select mel,sujet,alias  from maillist";
 	$vQuery=mysqli_query($bdd, $sql);
 
+	echo ("<div id='main'>");
 	//Heure de reponse
 	if ( $_REQUEST['optionsRadios'] == "Matin" )
 		$reponseTime = "de 9h à 12h";
@@ -75,6 +76,7 @@
 	}else{
 		echo "<h1 class=\"short\">Erreur de serveur mail</h1>";
 	}
+	echo ("</div>");
 	mysqli_close($bdd);
 	require_once('footer.php');
 ?>

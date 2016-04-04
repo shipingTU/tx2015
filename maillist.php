@@ -4,6 +4,7 @@
 	require_once('header.php'); 
 	require_once('menu.php'); 
 
+	echo ("<div id='main'>");
 	$bdd=connectionBD();
 	if(estAdmin()){
 		if (isset($_REQUEST['supMel'])){
@@ -68,5 +69,6 @@
 	}else{
 		alertContenuNonAutorise();
 	}
+	echo ("</div>");
 	require_once('footer.php');
 ?>

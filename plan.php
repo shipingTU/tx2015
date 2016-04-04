@@ -15,10 +15,8 @@
 				foreach (array_keys($menu) as $cat){
 					echo "<li style=' color:Indigo;text-shadow: 5px 5px 5px GoldenRod;font-weight : bold;font-family: Tahoma, Geneva, sans-serif;'>$cat</li><ul>";
 					afficheMenuItem($cat,$menu);
-					echo "</ul>";
-					
-				}
-				
+					echo "</ul>";		
+				}		
 				?>
 			</ul>
 

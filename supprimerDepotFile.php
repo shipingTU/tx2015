@@ -3,6 +3,8 @@
 	$titre="Supprimer un fichier dans le dépôt";
 	require_once('header.php');
 	require_once('menu.php');
+
+	echo("<div id='main'>");
 	if(estAdmin()){
 		$bdd=connectionBD();
 		$nom = $_GET['nom'];
@@ -38,5 +40,6 @@
 	}else{
 		alertContenuNonAutorise();
 	}
-		require_once('footer.php'); 
+	echo("</div>");
+	require_once('footer.php'); 
 ?>
